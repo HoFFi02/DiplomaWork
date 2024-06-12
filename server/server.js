@@ -1,19 +1,20 @@
+import dbConfing from "./config/db.js";
+import mysql from "mysql";
+import express from "express";
+import session from 'express-session';
+import bodyParser from 'body-parser';
+import dotenv from 'dotenv';
+import authRoutes from './routes/auth.js';
+import cors from "cors";
 // server/server.js
-const express = require('express');
-require('dotenv').config(); // Ładowanie zmiennych środowiskowych z pliku .env
+//const express = require('express');
 
-const mysql = require('mysql');
-
+dotenv.config();
 // Utworzenie połączenia z bazą danych
-const connection = mysql.createConnection({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_DATABASE
-});
+const db = mysql.createConnection(dbConfing)
 
 // Nawiązanie połączenia
-connection.connect((err) => {
+db.connect((err) => {
   if (err) {
     console.error('Błąd połączenia z bazą danych:', err);
     return;
@@ -25,20 +26,34 @@ const app = express();
 
 // Middleware dla parsowania JSON (opcjonalnie)
 app.use(express.json());
+app.use(cors({
+  origin: ["http://localhost:5173"],
+  methods: ["POST", "GET"],
+  credentials: true
+}));
+
+
+//session
+app.use(bodyParser.json());
+app.use(session({
+    secret: process.env.SESSION_SECRET,
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+      secure: false, // Ustaw na true przy HTTPS
+      httpOnly: true,
+      maxAge: 24 * 60 * 60 * 1000 // 24 godziny
+    }
+  }));
+  
 
 // Prosta trasa testowa
-app.get('/api', (req, res) => {
-  res.json({ message: 'Hello from the API' });
-});
-
-// Przykład trasy z parametrami
-app.get('/api/hello/:name', (req, res) => {
-  const name = req.params.name;
-  res.json({ message: `Hello, ${name}!` });
-});
+app.use('/auth', authRoutes);
 
 // Uruchamianie serwera
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
+export default db;
