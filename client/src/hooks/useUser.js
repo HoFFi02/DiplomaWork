@@ -12,6 +12,7 @@ function useUser() {
         });
         console.log('Response status:', response.status); // Debugowanie
         console.log('Dane użytkownika z sesji:', response.data.user); // Debugowanie
+        console.log('Dane użytkownika z sesji:', response.data.user);
         setUser(response.data.user || null);
       } catch (error) {
         console.error('Błąd podczas pobierania użytkownika:', error);

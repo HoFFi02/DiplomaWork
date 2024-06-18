@@ -1,0 +1,31 @@
+/* TableStyles.css */
+.table-container {
+    max-height: 400px;  /* Maksymalna wysokość kontenera tabeli */
+    overflow-y: auto;   /* Przewijanie w pionie, gdy treść przekracza maksymalną wysokość */
+    border: 1px solid #ddd; /* Opcjonalne, aby lepiej wyróżnić obszar */
+    padding: 0;         /* Dodatkowy styl dla lepszego dopasowania */
+  }
+  
+  .table-container table {
+    width: 100%; /* Szerokość tabeli na pełną szerokość kontenera */
+    border-collapse: collapse; /* Stylowanie, aby komórki nie miały podwójnych linii */
+  }
+  
+  .table-container th, .table-container td {
+    padding: 8px; /* Wypełnienie dla komórek */
+    text-align: left; /* Wyrównanie tekstu do lewej */
+    border-bottom: 1px solid #ddd; /* Dodanie dolnej linii dla rozdzielania wierszy */
+  }
+  
+  .table-container thead {
+    position: sticky; /* Utrzymanie nagłówka na górze podczas przewijania */
+    top: 0;
+    background: #f1f1f1; /* Tło dla nagłówka */
+    z-index: 1; /* Ustawienie z-index, aby nagłówek był nad resztą treści */
+  }
+  
+ .days-table {
+  margin-right: 100px;
+ }
+ 
+  

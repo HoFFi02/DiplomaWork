@@ -16,8 +16,8 @@ function App() {
     <Router>
       <Routes>
         {/* Przekazujemy user i onLogout jako propsy do komponentu HomePage */}
-        <Route path="/" element={<HomePage user={user} onLogout={handleLogout} />} />
-        <Route path="/login" element={<LoginPage />} />
+        <Route path="/home" element={<HomePage user={user} onLogout={handleLogout} />} />
+        <Route path="/" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
       </Routes>
     </Router>

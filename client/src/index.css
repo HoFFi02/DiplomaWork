@@ -1,20 +1,8 @@
-body {
-  font-family: Arial, sans-serif;
+html,body {
+  height: 100%;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 1em, rgba(127, 215, 245, 0.4) 0, rgba(127, 215, 245, 0.1) 2em, transparent 0, transparent 1em, rgba(127, 215, 245, 0.3) 0, rgba(127, 215, 245, 0.2) 4em, transparent 0, transparent 1em, rgba(192, 235, 250, 0.6) 0, rgba(192, 235, 250, 0.2) 2em), repeating-linear-gradient(45deg, transparent, transparent 1em, rgba(127, 215, 245, 0.4) 0, rgba(127, 215, 245, 0.1) 2em, transparent 0, transparent 1em, rgba(127, 215, 245, 0.3) 0, rgba(127, 215, 245, 0.2) 4em, transparent 0, transparent 1em, rgba(192, 235, 250, 0.4) 0, rgba(192, 235, 250, 0.1) 2em), #fff;
+  background-blend-mode: multiply;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
-}
-
-div {
-  margin: 20px;
-}
-
-input {
-  margin: 10px 0;
-  padding: 8px;
-  display: block;
-}
-
-button {
-  padding: 8px 16px;
+  overflow: hidden;
 }
