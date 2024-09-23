@@ -5,7 +5,6 @@ import axios from 'axios';
 const DaysTable = ({ userId }) => {
   const [days, setDays] = useState([]);
 
-  // Pobierz dni przy załadowaniu komponentu
   useEffect(() => {
     fetchDays();
   }, []);
@@ -23,6 +22,8 @@ const DaysTable = ({ userId }) => {
   };
 
   const handleDayDrop = (updatedDay) => {
+    console.log('Zaktualizowany dzień:', updatedDay);
+    
     setDays((prevDays) =>
       prevDays.map((day) => (day.number_of_day === updatedDay.number_of_day ? updatedDay : day))
     );
@@ -41,7 +42,7 @@ const DaysTable = ({ userId }) => {
         </thead>
         <tbody>
           {days.map((day) => (
-            <Day key={day.number_of_day} day={day} userId={userId} onDrop={handleDayDrop} />
+            <Day key={day.number_of_day} day={day} userId={userId} onDrop={handleDayDrop} onClick={handleDayDrop} />
           ))}
         </tbody>
       </table>

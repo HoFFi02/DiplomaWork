@@ -27,10 +27,10 @@ const Nav = () => {
         <b></b>
       <div className='controls-nav'>
         
-        <Link to="/home"><p> Strona Główna</p></Link>
+        <Link to="/home"><p> Home</p></Link>
         <p> Plan</p>
-        <Link to="/lista zakupów"><p> Lista zakupów</p></Link>
-        <p onClick={handleLogout}> Wyloguj</p>
+        <Link to="/shopping_list" ><p> Shopping list</p></Link>
+        <p onClick={handleLogout}> Logout</p>
       </div>
     </nav>
     </>

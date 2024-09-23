@@ -22,7 +22,6 @@ function HomePage() {
     }
   };
 
-  console.log('Wartość user w HomePage:', user); // Debugowanie
 
   return (
     <div>

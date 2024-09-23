@@ -22,7 +22,7 @@ const assignDaysToUser = (userId) => {
           [dayNumber, mealIds.breakfast, userId],
           (err, dayResult) => {
             if (err) return rejectDay(err);
-
+ 
             // Insert day for lunch
             db.query(
               'INSERT INTO day (number_of_day, meal_id_meal, user_id_user) VALUES (?, ?, ?)',
@@ -142,7 +142,6 @@ const loginUser = (req, res) => {
     req.session.id_user = user.id_user;
     req.session.email = user.email;
 
-    console.log('Sesja ustawiona:', req.session);
 
     req.session.save((err) => {
       if (err) {
@@ -187,8 +186,6 @@ const logoutUser = (req, res) => {
 // };
 
 const getSession = (req, res) => {
-  console.log('Sesja użytkownika tutaj:', req.session.username);
-  console.log('Sesja użytkownika tutaj2:', req.session);
 
   if (req.session.username) {
     res.json({
@@ -199,7 +196,7 @@ const getSession = (req, res) => {
       }
     });
   } else {
-    console.log('Sesja użytkownika: brak');
+  
     res.status(200).json({ user: null });
   }
 };

@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import HomePage from './pages/HomePage';
+import ShoppingListPage from './pages/Shopping_listPage';
 import React, { useState } from 'react';
 
 function App() {
@@ -16,9 +17,10 @@ function App() {
     <Router>
       <Routes>
         {/* Przekazujemy user i onLogout jako propsy do komponentu HomePage */}
-        <Route path="/home" element={<HomePage user={user} onLogout={handleLogout} />} />
+        <Route path="/home" element={<HomePage />} />
         <Route path="/" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
+        <Route path="/shopping_list" element={<ShoppingListPage />} />
       </Routes>
     </Router>
   );

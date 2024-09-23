@@ -14,11 +14,18 @@ const Recipe = ({ recipe }) => {
 
   return (
     <tr ref={drag} style={{ opacity: isDragging ? 0.5 : 1 }}>
-      <td>{recipe.recipe_name}</td>
-      <td>{recipe.ingredients}</td>
+      <td>{recipe.name}</td>
+      <td>
+        {recipe.ingredients.map((ingredient, index) => (
+          <div key={index}>
+            {ingredient.name} ({ingredient.amount} {ingredient.unit})
+          </div>
+        ))}
+      </td>
     </tr>
   );
 };
+
 
 const RecipesTable = () => {
   const [recipes, setRecipes] = useState([]);
@@ -27,14 +34,7 @@ const RecipesTable = () => {
     const fetchRecipes = async () => {
       try {
         const response = await axios.get('http://localhost:5000/api/recipes');
-        const recipesWithIngredients = await Promise.all(
-          response.data.map(async (recipe) => {
-            const ingredientsResponse = await axios.get(`http://localhost:5000/api/recipes/${recipe.id_recipe}/ingredients`);
-            const ingredients = ingredientsResponse.data.join(', ');
-            return { ...recipe, ingredients };
-          })
-        );
-        setRecipes(recipesWithIngredients);
+        setRecipes(response.data); // Dane są już w formacie, który potrzebujemy
       } catch (error) {
         console.error('Błąd podczas pobierania przepisów:', error);
       }

@@ -20,6 +20,8 @@
     "express": "^4.19.2",
     "express-session": "^1.18.0",
     "mysql": "^2.18.1",
+    "mysql2": "^3.11.2",
+    "sequelize": "^6.37.3",
     "session-memory-store": "^1.0.0"
   },
   "devDependencies": {

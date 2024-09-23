@@ -12,9 +12,14 @@
   }
   
   .table-container th, .table-container td {
-    padding: 8px; /* Wypełnienie dla komórek */
-    text-align: left; /* Wyrównanie tekstu do lewej */
-    border-bottom: 1px solid #ddd; /* Dodanie dolnej linii dla rozdzielania wierszy */
+    padding: 8px; 
+    text-align: left; 
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    
+  }
+  .table-container tbody{
+    background-color: white;
   }
   
   .table-container thead {
@@ -28,4 +33,31 @@
   margin-right: 100px;
  }
  
-  
+ .meal-cell {
+  position: relative;
+  padding-right: 30px; /* Przestrzeń dla przycisku po prawej stronie */
+}
+
+.meal-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  color: #d9534f; /* Czerwony kolor */
+  padding: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover {
+  color: #c9302c; /* Ciemniejszy czerwony przy najechaniu */
+}
+
+ion-icon {
+  font-size: 24px; /* Rozmiar ikony */
+  color: inherit; /* Dziedziczenie koloru z przycisku */
+} 
