@@ -111,56 +111,6 @@ const deleteDay = async (req, res) => {
   }
 };
 
-// const deleteDay = (req, res) => {
-//   const { id } = req.params;
-//   const { number_of_day, meal_id_meal, user_id } = req.body;
-//   console.log(req.body); 
-//   if (!number_of_day || !meal_id_meal || !user_id) {
-//     return res.status(400).json({ message: 'Wymagane pola są niekompletne' });
-//   }
-
-//   const sql = `
-//     UPDATE day 
-//     SET recipe_id_recipe = NULL 
-//     WHERE user_id_user = ? 
-//       AND number_of_day = ? 
-//       AND meal_id_meal = ?;
-//   `;
-//   const values = [user_id, number_of_day, meal_id_meal];
-
-//   db.query(sql, values, (err, result) => {
-//     if (err) {
-//       console.error('Błąd podczas aktualizowania dnia:', err.message);
-//       return res.status(500).json({ message: 'Wystąpił błąd podczas aktualizowania dnia', error: err.message });
-//     }
-
-//     if (result.affectedRows === 0) {
-//       return res.status(404).json({ message: 'Nie znaleziono dnia o podanym ID lub użytkownik nie ma uprawnień do aktualizacji tego dnia' });
-//     }
-
-//     const sqlSelect = `
-//       SELECT 
-//         d.id_day, 
-//         d.number_of_day, 
-//         MAX(CASE WHEN m.name = 'Breakfast' THEN r.name ELSE NULL END) AS breakfast_recipe_name,
-//         MAX(CASE WHEN m.name = 'Lunch' THEN r.name ELSE NULL END) AS lunch_recipe_name,
-//         MAX(CASE WHEN m.name = 'Dinner' THEN r.name ELSE NULL END) AS dinner_recipe_name 
-//       FROM day d
-//       LEFT JOIN meal m ON d.meal_id_meal = m.id_meal 
-//       LEFT JOIN recipe r ON d.recipe_id_recipe = r.id_recipe 
-//       WHERE d.user_id_user = ? AND d.number_of_day = ? 
-//       GROUP BY d.number_of_day;
-//     `;
-//     db.query(sqlSelect, [user_id, number_of_day], (err, rows) => {
-//       if (err) {
-//         console.error('Błąd podczas pobierania dnia:', err.message);
-//         return res.status(500).json({ message: 'Wystąpił błąd podczas pobierania dnia', error: err.message });
-//       }
-
-//       res.json({ message: 'Dzień zaktualizowany pomyślnie', updatedDay: rows[0] });
-//     });
-//   });
-// };
 
 // GET /api/days
 const getUserDays = async (req, res) => {
@@ -198,23 +148,3 @@ const getUserDays = async (req, res) => {
 
   
 export {updateDay, deleteDay, getUserDays };
-
-
-// // DELETE /api/days/:id
-// const deleteDay = async (req, res) => {
-//   const { id } = req.params;
-
-//   try {
-//     const day = await Day.findByPk(id);
-
-//     if (!day) {
-//       return res.status(404).json({ message: 'Day not found' });
-//     }
-
-//     await day.destroy();
-//     res.status(200).json({ message: 'Day deleted successfully' });
-//   } catch (err) {
-//     console.error('Error deleting day:', err.message);
-//     res.status(500).json({ message: 'Error deleting day', error: err.message });
-//   }
-// };
