@@ -46,6 +46,7 @@ Aplikacja internetowa umożliwiająca użytkownikom planowanie posiłków oraz a
 
 ## UI na urządzeniach mobilnych
 
+<img src="images/rejestracjatelefon.jpg" alt="Rejestracja telefon" width="100" height="300">
 ![Rejestracja telefon](images/rejestracjatelefon.jpg)
 ![Logowanie telefon](images/logowanietelefon.jpg)
 ![Strona główna telefon](images/stronaglownatelefon.jpg)
@@ -55,4 +56,7 @@ Aplikacja internetowa umożliwiająca użytkownikom planowanie posiłków oraz a
 ![Lista zakupów telefon](images/listazakupowtelefon.jpg)
 
 🛠 Stworzone przez Michała Hoffmana w ramach pracy dyplomowej na Uniwersytecie Zielonogórskim.
+
+
+
 
