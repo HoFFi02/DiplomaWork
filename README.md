@@ -39,7 +39,7 @@ Aplikacja internetowa umożliwiająca użytkownikom planowanie posiłków oraz a
 
 ## 📸 Zrzuty ekranu
 
-![Logowanie i rejestracja](images/logowanie.png)
+![Logowanie i rejestracja](images/logowaniekomputer.png)
 ![Strona główna - dodawanie przepisu](images/dodawanie_przepisu.png)
 ![Plan posiłków](images/plan_posilkow.png)
 ![Lista zakupów](images/lista_zakupow.png)
