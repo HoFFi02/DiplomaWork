@@ -33,23 +33,23 @@ Aplikacja internetowa umożliwiająca użytkownikom planowanie posiłków oraz a
 
 1. **Zarejestruj się lub zaloguj** 📝
  <div align="center">  
-     ![Rejestracja komputer](images/rejestracjakomputer.png =400x400)  
-     ![Logowanie komputer](images/logowaniekomputer.png =400x400)  
-   </div>
+    <img src="images/rejestracjakomputer.png" alt="Rejestracja komputer" width="400">
+    <img src="images/logowaniekomputer.png" alt="Logowanie komputer" width="400">
+ </div>
 2. **Dodaj przepisy do swojego planu posiłków poprzez funkcjonalność przeciągnij i upuść lub stwórz nowy przepis** 📅
   <div align="center">  
-     ![Strona główna komputer](images/stronaglowna.png =400x400)  
-     ![Dodawanie przepisu komputer](images/dodawanieprzepisukomputer.png =400x400)  
-   </div>
+    <img src="images/stronaglowna.png" alt="Strona główna komputer" width="400">
+    <img src="images/dodawanieprzepisukomputer.png" alt="Dodawanie przepisu komputer" width="400">
+  </div>
 3. **Przeglądaj plan i szczegóły przepisu** 🛍️
-<div align="center">  
-     ![Podstrona plan komputer](images/planpage.png =400x400)  
-     ![Szczegóły przepisu komputer](images/planmodal.png =400x400)  
-   </div>
+<div align="center">    
+    <img src="images/planpage.png" alt="Podstrona plan komputer" width="400">
+    <img src="images/planmodal.png" alt="Szczegóły przepisu komputer" width="400">
+ </div>
 4. **Przeglądaj liste zakupów lub pobierz listę w formacie PDF** 📄
   <div align="center">  
-     ![Lista zakupów komputer](images/listazakupowkomputer.png =400x400)  
-   </div>
+    <img src="images/listazakupowkomputer.png" alt="Lista zakupów komputer" width="400">
+  </div>
 5. **Ciesz się lepszą organizacją posiłków!** 🎉
 
 ## UI na urządzeniach mobilnych
