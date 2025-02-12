@@ -32,27 +32,27 @@ Aplikacja internetowa umożliwiająca użytkownikom planowanie posiłków oraz a
 ## 📖 Jak korzystać?
 
 1. **Zarejestruj się lub zaloguj** 📝
-![Logowanie i rejestracja](images/rejestracjakomputer.png)
-![Logowanie i rejestracja](images/logowaniekomputer.png)
+![Rejestracja komputer](images/rejestracjakomputer.png)
+![Logowanie komputer](images/logowaniekomputer.png)
 2. **Dodaj przepisy do swojego planu posiłków poprzez funkcjonalność przeciągnij i upuść lub stwórz nowy przepis** 📅
-![Logowanie i rejestracja](images/stronaglowna.png)
-![Logowanie i rejestracja](images/dodawanieprzepisukomputer.png)
+![Strona główna komputer](images/stronaglowna.png)
+![Dodawanie przepisu komputer](images/dodawanieprzepisukomputer.png)
 3. **Przeglądaj plan i szczegóły przepisu** 🛍️
-![Logowanie i rejestracja](images/planpage.png)
-![Logowanie i rejestracja](images/planmodal.png)
+![Podstrona plan komputer](images/planpage.png)
+![Szczegóły przepisu komputer](images/planmodal.png)
 4. **Przeglądaj liste zakupów lub pobierz listę w formacie PDF** 📄
-![Logowanie i rejestracja](images/listazakupowkomputer.png)
+![Lista zakupów komputer](images/listazakupowkomputer.png)
 5. **Ciesz się lepszą organizacją posiłków!** 🎉
 
 ## UI na urządzeniach mobilnych
 
-![Logowanie i rejestracja](images/rejestracjatelefon.png)
-![Logowanie i rejestracja](images/logowanietelefon.png)
-![Logowanie i rejestracja](images/stronaglownatelefon.png)
-![Logowanie i rejestracja](images/dodawanieprzepisutelefon.png)
-![Logowanie i rejestracja](images/plantelefon.png)
-![Logowanie i rejestracja](images/planmodaltelefon.png)
-![Logowanie i rejestracja](images/listazakupowtelefon.png)
+![Rejestracja telefon](images/rejestracjatelefon.jpg)
+![Logowanie telefon](images/logowanietelefon.jpg)
+![Strona główna telefon](images/stronaglownatelefon.jpg)
+![Dodawanie przepisu telefon](images/dodawanieprzepisutelefon.jpg)
+![Podstrona plan telefon](images/plantelefon.jpg)
+![Szczegóły przepisu telefon](images/planmodaltelefon.jpg)
+![Lista zakupów telefon](images/listazakupowtelefon.jpg)
 
 🛠 Stworzone przez Michała Hoffmana w ramach pracy dyplomowej na Uniwersytecie Zielonogórskim.
 
