@@ -13,6 +13,7 @@ Aplikacja internetowa umożliwiająca użytkownikom planowanie posiłków oraz a
 ✅ Eksport listy zakupów do pliku PDF 📄  
 ✅ Intuicyjna obsługa metodą „przeciągnij i upuść” 🎯  
 ✅ Responsywny interfejs dostosowany do urządzeń mobilnych 📱  
+✅ Obsługa wielojęzyczności  
 
 ## 🛠️ Wykorzystane technologie
 
@@ -33,8 +34,8 @@ Aplikacja internetowa umożliwiająca użytkownikom planowanie posiłków oraz a
 
 1. **Zarejestruj się lub zaloguj** 📝
  <div align="center">  
-    <img src="images/rejestracjakomputer.png" alt="Rejestracja komputer" width="400">
-    <img src="images/logowaniekomputer.png" alt="Logowanie komputer" width="400">
+    <img src="images/rejestracjakomputer.png" alt="Rejestracja komputer" width="500">
+    <img src="images/logowaniekomputer.png" alt="Logowanie komputer" width="500">
  </div>
 2. **Dodaj przepisy do swojego planu posiłków poprzez funkcjonalność przeciągnij i upuść lub stwórz nowy przepis** 📅
   <div align="center">  
