@@ -9,7 +9,7 @@ Aplikacja internetowa umożliwiająca użytkownikom planowanie posiłków oraz a
 ✅ Rejestracja i logowanie użytkowników 🔐  
 ✅ Przeglądanie przepisów 🍲  
 ✅ Dodawanie przepisów do planu posiłków 📅  
-✅ Generowanie listy zakupów 🛒  
+✅ Automatyczne generowanie listy zakupów 🛒  
 ✅ Eksport listy zakupów do pliku PDF 📄  
 ✅ Intuicyjna obsługa metodą „przeciągnij i upuść” 🎯  
 ✅ Responsywny interfejs dostosowany do urządzeń mobilnych 📱  
@@ -32,17 +32,27 @@ Aplikacja internetowa umożliwiająca użytkownikom planowanie posiłków oraz a
 ## 📖 Jak korzystać?
 
 1. **Zarejestruj się lub zaloguj** 📝
-2. **Dodaj przepisy do swojego planu posiłków** 📅
-3. **Generuj listę zakupów** 🛍️
-4. **Pobierz listę zakupów w formacie PDF** 📄
+![Logowanie i rejestracja](images/rejestracjakomputer.png)
+![Logowanie i rejestracja](images/logowaniekomputer.png)
+2. **Dodaj przepisy do swojego planu posiłków poprzez funkcjonalność przeciągnij i upuść lub stwórz nowy przepis** 📅
+![Logowanie i rejestracja](images/stronaglowna.png)
+![Logowanie i rejestracja](images/dodawanieprzepisukomputer.png)
+3. **Przeglądaj plan i szczegóły przepisu** 🛍️
+![Logowanie i rejestracja](images/planpage.png)
+![Logowanie i rejestracja](images/planmodal.png)
+4. **Przeglądaj liste zakupów lub pobierz listę w formacie PDF** 📄
+![Logowanie i rejestracja](images/listazakupowkomputer.png)
 5. **Ciesz się lepszą organizacją posiłków!** 🎉
 
-## 📸 Zrzuty ekranu
+## UI na urządzeniach mobilnych
 
-![Logowanie i rejestracja](images/logowaniekomputer.png)
-![Strona główna - dodawanie przepisu](images/dodawanie_przepisu.png)
-![Plan posiłków](images/plan_posilkow.png)
-![Lista zakupów](images/lista_zakupow.png)
+![Logowanie i rejestracja](images/rejestracjatelefon.png)
+![Logowanie i rejestracja](images/logowanietelefon.png)
+![Logowanie i rejestracja](images/stronaglownatelefon.png)
+![Logowanie i rejestracja](images/dodawanieprzepisutelefon.png)
+![Logowanie i rejestracja](images/plantelefon.png)
+![Logowanie i rejestracja](images/planmodaltelefon.png)
+![Logowanie i rejestracja](images/listazakupowtelefon.png)
 
 🛠 Stworzone przez Michała Hoffmana w ramach pracy dyplomowej na Uniwersytecie Zielonogórskim.
 
