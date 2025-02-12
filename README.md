@@ -46,17 +46,17 @@ Aplikacja internetowa umożliwiająca użytkownikom planowanie posiłków oraz a
 
 ## UI na urządzeniach mobilnych
 
-<img src="images/rejestracjatelefon.jpg" alt="Rejestracja telefon" width="200" height="300">
-![Rejestracja telefon](images/rejestracjatelefon.jpg)
-![Logowanie telefon](images/logowanietelefon.jpg)
-![Strona główna telefon](images/stronaglownatelefon.jpg)
-![Dodawanie przepisu telefon](images/dodawanieprzepisutelefon.jpg)
-![Podstrona plan telefon](images/plantelefon.jpg)
-![Szczegóły przepisu telefon](images/planmodaltelefon.jpg)
-![Lista zakupów telefon](images/listazakupowtelefon.jpg)
+<div align="center">
+    <img src="images/rejestracjatelefon.jpg" alt="Rejestracja telefon" width="250">
+    <img src="images/logowanietelefon.jpg" alt="Logowanie telefon" width="250">
+    <img src="images/stronaglownatelefon.jpg" alt="Strona główna telefon" width="250">
+    <img src="images/dodawanieprzepisutelefon.jpg" alt="Dodawanie przepisu telefon" width="250">
+    <img src="images/plantelefon.jpg" alt="Podstrona plan telefon" width="250">
+    <img src="images/planmodaltelefon.jpg" alt="Szczegóły przepisu telefon" width="250">
+    <img src="images/listazakupowtelefon.jpg" alt="Lista zakupów telefon" width="250">
+</div>
 
 🛠 Stworzone przez Michała Hoffmana w ramach pracy dyplomowej na Uniwersytecie Zielonogórskim.
-
 
 
 
