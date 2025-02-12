@@ -1,0 +1,132 @@
+body, html {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.login-container, .register-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form, .register-form{
+  background-color: rgba(255, 255, 255, 0.2); 
+  padding: 40px;
+  width: 350px;
+  border-radius: 25px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  backdrop-filter: blur(2px); 
+}
+
+ .login-form h1,
+ .register-form h1  {
+  font-size: 28px;
+  color: black; 
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.login-form p,
+.register-form p {
+  font-size: 16px;
+  color: #646161; 
+  margin-bottom: 20px;
+}
+
+.login-form h2,
+.register-form h2 {
+  font-size: 22px;
+  color: black; 
+  margin-bottom: 20px;
+}
+
+.login-form .input-container,
+.register-form .input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.login-form input,
+.register-form input  {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  font-size: 16px;
+  border: 2px solid rgba(255, 255, 255, 1); 
+  background-color: rgba(255, 255, 255, 0.7); 
+  color: #333; 
+  border-radius: 25px; 
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.login-form input:focus,
+.register-form input:focus  {
+  border-color: #7fd7f5; 
+  background-color: rgba(255, 255, 255, 0.5); 
+  outline: none;
+}
+.login-form .input-container ion-icon,
+.register-form .input-container ion-icon  {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #888;
+}
+
+.login-form button,
+.register-form button  {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: white;
+  background-color: #6ed7fa; 
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 10px;
+}
+
+.login-form button:hover,
+.register-form button:hover  {
+  background-color: #6abbe0; 
+}
+
+.login-form .link,
+.register-form .link  {
+  text-decoration: none; 
+}
+
+.login-form span,
+.register-form span  {
+  color: #6ed7fa;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.login-form span:hover,
+.register-form span:hover  {
+  color: #6abbe0; 
+}
+
+
+@media (max-width: 768px) {
+  .login-form, .register-form {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .login-form h1,
+  .register-form h1 {
+    font-size: 24px;
+  }
+
+.login-form h2,
+.register-form h2 {
+    font-size: 18px;
+  }
+}

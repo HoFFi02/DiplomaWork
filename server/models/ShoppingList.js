@@ -13,6 +13,10 @@ const ShoppingList = sequelize.define('ShoppingList', {
     type: DataTypes.INTEGER,
     allowNull: false
   },
+  month: { 
+    type: DataTypes.INTEGER,
+    allowNull: false,
+  },
   recipe_product_id_recipe_product: {
     type: DataTypes.INTEGER,
     allowNull: false

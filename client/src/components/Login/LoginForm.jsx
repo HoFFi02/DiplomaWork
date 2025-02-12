@@ -1,20 +1,23 @@
 import { useState } from 'react';
-import '../../css/login.css';
+import  '../../css/login-register.css';
 import axios from 'axios';
-import { BrowserRouter as Router, Route, Routes, Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import API_URL from '../../hooks/url';
+import { useTranslation } from 'react-i18next';
 
 function LoginForm({ onSuccess }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const { t } = useTranslation();
 
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/auth/login', {
+      const response = await axios.post(`${API_URL}/auth/login`, {
         username,
         password
       }, {
-        withCredentials: true // To ensure cookies are sent with the request
+        withCredentials: true
       });
 
       if (response.status === 200) {
@@ -29,32 +32,37 @@ function LoginForm({ onSuccess }) {
   };
 
   return (
-    <div className="container">
-    <main>
-    <h1>Witamy serdecznie!</h1>
-    <p>Stwórz swój własny plan żywieniowy!</p>
-    <form onSubmit={handleLogin}>
-      <h2>Login</h2>
-      <input
-        type="text"
-        placeholder="Username"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
-        required
-      />
-      <input
-        type="password"
-        placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        required
-      />
-      <button type="submit">Login</button>
-      
-    </form>
-    <p>Nie masz jeszcze konta? <Link to="/register"><span>Zarejestruj się</span></Link>.</p>
-    </main>
-  </div>
+    <div className="login-container">
+      <main className="login-form">
+        <h1>{t('welcome')}</h1>
+        <p>{t('loginMes')}</p>
+        <form onSubmit={handleLogin}>
+          <h2>{t('login')}</h2>
+          <div className="input-container">
+            <ion-icon name="person-outline"></ion-icon>
+            <input
+              type="text"
+              placeholder={t('username')}
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              required
+            />
+          </div>
+          <div className="input-container">
+            <ion-icon name="lock-closed-outline"></ion-icon> 
+            <input
+              type="password"
+              placeholder={t('password')}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+          </div>
+          <button type="submit">{t('signIn')}</button>
+        </form>
+        <p>{t('noAccount')} <Link to="/register" className="link"><span>{t('signUp')}</span></Link>.</p>
+      </main>
+    </div>
   );
 }
 

@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "cypress-drag-drop": "^1.1.1"
+  }
+}

@@ -1,64 +1,40 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useDrag } from 'react-dnd';
-import { ItemTypes } from '../../../hooks/ItemTypes'; // Stworzony plik ItemTypes.js zawierający stałe dla typów elementów
-
-const Recipe = ({ recipe }) => {
-  const [{ isDragging }, drag] = useDrag({
-    type: ItemTypes.RECIPE,
-    item: { id: recipe.id_recipe, name: recipe.recipe_name },
-    collect: (monitor) => ({
-      isDragging: !!monitor.isDragging(),
-    }),
-  });
-
-  return (
-    <tr ref={drag} style={{ opacity: isDragging ? 0.5 : 1 }}>
-      <td>{recipe.name}</td>
-      <td>
-        {recipe.ingredients.map((ingredient, index) => (
-          <div key={index}>
-            {ingredient.name} ({ingredient.amount} {ingredient.unit})
-          </div>
-        ))}
-      </td>
-    </tr>
-  );
-};
-
+import Recipe from './Recipe';
+import API_URL from '../../../hooks/url';
+import { useTranslation } from 'react-i18next';
 
 const RecipesTable = () => {
   const [recipes, setRecipes] = useState([]);
+  const { t, i18n } = useTranslation();
+  const language = i18n.language;
 
   useEffect(() => {
-    const fetchRecipes = async () => {
+    const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/recipes');
-        setRecipes(response.data); // Dane są już w formacie, który potrzebujemy
+        const recipesRes = await axios.get(`${API_URL}/api/recipes?language=${language}`);
+        setRecipes(recipesRes.data);
       } catch (error) {
-        console.error('Błąd podczas pobierania przepisów:', error);
+        console.error('Error fetching data:', error);
       }
     };
-
-    fetchRecipes();
-  }, []);
-
-  if (recipes.length === 0) {
-    return <p>Ładowanie...</p>;
-  }
+    fetchData();
+  }, [language]);
 
   return (
     <div className="table-container">
       <table>
         <thead>
           <tr>
-            <th>Nazwa Przepisu</th>
-            <th>Składniki</th>
+            <th>{t('recipeName')}</th>
+            <th>
+              {t('ingredients')}
+            </th>
           </tr>
         </thead>
         <tbody>
-          {recipes.map((recipe) => (
-            <Recipe key={recipe.id_recipe} recipe={recipe} />
+          {recipes.map((recipe, index) => (
+            <Recipe key={recipe.id_recipe || index + 1} recipe={recipe} />
           ))}
         </tbody>
       </table>

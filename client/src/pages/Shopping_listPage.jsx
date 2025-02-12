@@ -3,21 +3,15 @@ import ShoppingListForm from '../components/Shopping_list/Shopping_listForm';
 import '../css/shoppingList.css';
 import Nav from '../components/Nav/Nav';
 import useUser from '../hooks/useUser';
+import LanguageSwitcher from '../hooks/LanguageSwitcher.jsx';
 
 function ShoppingListPage () {
-  const { user, loading } = useUser();
-
-  if (loading) {
-    return <div>Loading...</div>; // Możesz dodać loader
-  }
-
-  if (!user) {
-    return <div>Użytkownik nie jest zalogowany</div>;
-  }
+  const { user } = useUser();
 
   return (
     <div className="shopping-list-page">
       <Nav />
+      <LanguageSwitcher />
       <ShoppingListForm user={user} />
     </div>
   );

@@ -7,11 +7,19 @@ const Product = sequelize.define('Product', {
     primaryKey: true,
     autoIncrement: true
   },
-  name: {
+  name_pl: {
     type: DataTypes.STRING,
     allowNull: false
   },
-  unit: {
+  name_en: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+  unit_pl: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+  unit_en: {
     type: DataTypes.STRING,
     allowNull: false
   }

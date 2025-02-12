@@ -3,24 +3,19 @@ import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import HomePage from './pages/HomePage';
 import ShoppingListPage from './pages/Shopping_listPage';
+import PlanPage from './pages/PlanPage';
 import React, { useState } from 'react';
 
 function App() {
-  const [user, setUser] = useState(null);
-
-  const handleLogout = () => {
-    // Implementacja wylogowywania...
-    setUser(null);
-  };
-
+  
   return (
     <Router>
       <Routes>
-        {/* Przekazujemy user i onLogout jako propsy do komponentu HomePage */}
         <Route path="/home" element={<HomePage />} />
         <Route path="/" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/shopping_list" element={<ShoppingListPage />} />
+        <Route path="/plan" element={<PlanPage />} />
       </Routes>
     </Router>
   );

@@ -1,8 +1,5 @@
 import { DataTypes } from 'sequelize';
 import sequelize from '../config/db.js';
-import Meal from './Meal.js';
-import Recipe from './Recipe.js';
-import User from './User.js'
 
 const Day = sequelize.define('Day', {
   id_day: {
@@ -22,6 +19,14 @@ const Day = sequelize.define('Day', {
     type: DataTypes.INTEGER,
     allowNull: true
   },
+  month: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+  },
+  year: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+  },
   user_id_user: {
     type: DataTypes.INTEGER,
     allowNull: false
@@ -31,7 +36,5 @@ const Day = sequelize.define('Day', {
   timestamps: false
 });
 
-Day.belongsTo(Meal, { foreignKey: 'meal_id_meal' });
-Day.belongsTo(Recipe, { foreignKey: 'recipe_id_recipe' });
-Day.belongsTo(User, { foreignKey: 'user_id_user' });
+
 export default Day;

@@ -1,6 +1,6 @@
-import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import LoginForm from '../components/Login/LoginForm';
+import LanguageSwitcher from '../hooks/LanguageSwitcher.jsx';
 
 function LoginPage() {
   const navigate = useNavigate();
@@ -11,6 +11,7 @@ function LoginPage() {
 
   return (
     <div>
+      <LanguageSwitcher />
       <LoginForm onSuccess={handleSuccessfulLogin} />
     </div>
   );

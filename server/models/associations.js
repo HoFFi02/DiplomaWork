@@ -6,7 +6,7 @@ import Day from './Day.js';
 import Meal from './Meal.js';
 
 const defineAssociations = () => {
-  // Definiowanie asocjacji
+  
   Recipe.hasMany(RecipeProduct, { foreignKey: 'recipe_id_recipe' });
   RecipeProduct.belongsTo(Recipe, { foreignKey: 'recipe_id_recipe' });
 

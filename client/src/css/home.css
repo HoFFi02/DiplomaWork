@@ -1,63 +1,97 @@
-/* TableStyles.css */
-.table-container {
-    max-height: 400px;  /* Maksymalna wysokość kontenera tabeli */
-    overflow-y: auto;   /* Przewijanie w pionie, gdy treść przekracza maksymalną wysokość */
-    border: 1px solid #ddd; /* Opcjonalne, aby lepiej wyróżnić obszar */
-    padding: 0;         /* Dodatkowy styl dla lepszego dopasowania */
-  }
-  
-  .table-container table {
-    width: 100%; /* Szerokość tabeli na pełną szerokość kontenera */
-    border-collapse: collapse; /* Stylowanie, aby komórki nie miały podwójnych linii */
-  }
-  
-  .table-container th, .table-container td {
-    padding: 8px; 
-    text-align: left; 
-    border-bottom: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    
-  }
-  .table-container tbody{
-    background-color: white;
-  }
-  
-  .table-container thead {
-    position: sticky; /* Utrzymanie nagłówka na górze podczas przewijania */
-    top: 0;
-    background: #f1f1f1; /* Tło dla nagłówka */
-    z-index: 1; /* Ustawienie z-index, aby nagłówek był nad resztą treści */
-  }
-  
- .days-table {
-  margin-right: 100px;
- }
- 
- .meal-cell {
-  position: relative;
-  padding-right: 30px; /* Przestrzeń dla przycisku po prawej stronie */
-}
 
-.meal-content {
+.language-switcher {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: right;
+  margin-top: 3px;
 }
-
-.button {
-  background-color: transparent;
-  border: none;
-  color: #d9534f; /* Czerwony kolor */
-  padding: 5px;
+.language-switcher button {
+  margin: 0 5px;
+  padding: 5px 10px;
   cursor: pointer;
-  font-size: 16px;
+  background-color: #85b5eb;
+  border: none;
+  border-radius: 4px;
 }
 
-.button:hover {
-  color: #c9302c; /* Ciemniejszy czerwony przy najechaniu */
+.language-switcher button:hover {
+  background-color: #678df4;
 }
 
-ion-icon {
-  font-size: 24px; /* Rozmiar ikony */
-  color: inherit; /* Dziedziczenie koloru z przycisku */
-} 
+
+
+.add-button-container {
+  display: flex; 
+  justify-content: flex-end; 
+  margin-bottom: 10px; 
+}
+
+.add-button {
+  padding: 10px 10px; 
+  font-size: 1rem; 
+  color: #fff; 
+  background-color: #007bff; 
+  border: none; 
+  border-radius: 8px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+
+.add-button:hover {
+  background-color: #0056b3; 
+}
+
+.add-button:active {
+  background-color: #003f7f; 
+}
+
+.month-selector {
+  display: flex; 
+  align-items: center; 
+  gap: 10px; 
+  width: 100%; 
+  max-width: 800px; 
+  margin-bottom: 10px; 
+}
+
+label {
+  flex: 1;
+  font-size: 1rem; 
+  font-weight: bold; 
+  color: #004d40; 
+}
+
+select {
+  flex: 3; 
+  padding: 10px 15px; 
+  font-size: 1rem; 
+  color: #004d40; 
+  background-color: rgba(255, 255, 255, 0.6); 
+  border: 2px solid #007bff; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: all 0.3s ease; 
+}
+
+
+select:hover {
+  background-color: rgba(255, 255, 255, 1);
+  border-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+select:focus {
+  outline: none;
+  border-color: #003f7f;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+h2{
+color:  #004d40;
+}
+
+.lang-info{
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+  margin-top: 10px;
+}

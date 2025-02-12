@@ -1,15 +1,16 @@
 import React from 'react';
 import '../../css/nav.css';
-import { BrowserRouter as Router, Route, Routes, Link  } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import axios from "axios";
-
+import API_URL from '../../hooks/url';
+import { useTranslation } from 'react-i18next';
 
 const Nav = () => {
-
+  const { t } = useTranslation();
   const handleLogout = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/auth/logout', {
-        withCredentials: true // Wysyłanie ciasteczek sesji
+      const response = await axios.get(`${API_URL}/auth/logout`, {
+        withCredentials: true
       });
       if (response.status === 200) {
         window.location.href = '/';
@@ -22,17 +23,17 @@ const Nav = () => {
 
   return (
     <>
-    <nav>
-      <div className='all-logo'></div>
-        <b></b>
-      <div className='controls-nav'>
-        
-        <Link to="/home"><p> Home</p></Link>
-        <p> Plan</p>
-        <Link to="/shopping_list" ><p> Shopping list</p></Link>
-        <p onClick={handleLogout}> Logout</p>
-      </div>
-    </nav>
+      <nav>
+        <div className='all-logo'></div>
+        <ion-icon name="restaurant-outline"></ion-icon>
+        <div className='controls-nav'>
+
+          <Link to="/home" className='link'><p> {t('home')}</p></Link>
+          <Link to="/plan" className='link'><p> {t('plan')}</p> </Link>
+          <Link to="/shopping_list" className='link'><p> {t('shoppingList')}</p></Link>
+          <p onClick={handleLogout}> {t('logout')}</p>
+        </div>
+      </nav>
     </>
   )
 }
