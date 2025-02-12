@@ -32,21 +32,22 @@ Aplikacja internetowa umożliwiająca użytkownikom planowanie posiłków oraz a
 ## 📖 Jak korzystać?
 
 1. **Zarejestruj się lub zaloguj** 📝
+2. <img src="images/rejestracjakomputer.png" alt="Rejestracja telefon" width="500">
 ![Rejestracja komputer](images/rejestracjakomputer.png)
 ![Logowanie komputer](images/logowaniekomputer.png)
-2. **Dodaj przepisy do swojego planu posiłków poprzez funkcjonalność przeciągnij i upuść lub stwórz nowy przepis** 📅
+3. **Dodaj przepisy do swojego planu posiłków poprzez funkcjonalność przeciągnij i upuść lub stwórz nowy przepis** 📅
 ![Strona główna komputer](images/stronaglowna.png)
 ![Dodawanie przepisu komputer](images/dodawanieprzepisukomputer.png)
-3. **Przeglądaj plan i szczegóły przepisu** 🛍️
+4. **Przeglądaj plan i szczegóły przepisu** 🛍️
 ![Podstrona plan komputer](images/planpage.png)
 ![Szczegóły przepisu komputer](images/planmodal.png)
-4. **Przeglądaj liste zakupów lub pobierz listę w formacie PDF** 📄
+5. **Przeglądaj liste zakupów lub pobierz listę w formacie PDF** 📄
 ![Lista zakupów komputer](images/listazakupowkomputer.png)
-5. **Ciesz się lepszą organizacją posiłków!** 🎉
+6. **Ciesz się lepszą organizacją posiłków!** 🎉
 
 ## UI na urządzeniach mobilnych
 
-<img src="images/rejestracjatelefon.jpg" alt="Rejestracja telefon" width="100" height="300">
+<img src="images/rejestracjatelefon.jpg" alt="Rejestracja telefon" width="200" height="300">
 ![Rejestracja telefon](images/rejestracjatelefon.jpg)
 ![Logowanie telefon](images/logowanietelefon.jpg)
 ![Strona główna telefon](images/stronaglownatelefon.jpg)
