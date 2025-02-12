@@ -39,17 +39,17 @@ Aplikacja internetowa umożliwiająca użytkownikom planowanie posiłków oraz a
  </div>
 2. **Dodaj przepisy do swojego planu posiłków poprzez funkcjonalność przeciągnij i upuść lub stwórz nowy przepis** 📅
   <div align="center">  
-    <img src="images/stronaglowna.png" alt="Strona główna komputer" width="400">
-    <img src="images/dodawanieprzepisukomputer.png" alt="Dodawanie przepisu komputer" width="400">
+    <img src="images/stronaglowna.png" alt="Strona główna komputer" width="500">
+    <img src="images/dodawanieprzepisukomputer.png" alt="Dodawanie przepisu komputer" width="500">
   </div>
 3. **Przeglądaj plan i szczegóły przepisu** 🛍️
 <div align="center">    
-    <img src="images/planpage.png" alt="Podstrona plan komputer" width="400">
-    <img src="images/planmodal.png" alt="Szczegóły przepisu komputer" width="400">
+    <img src="images/planpage.png" alt="Podstrona plan komputer" width="500">
+    <img src="images/planmodal.png" alt="Szczegóły przepisu komputer" width="500">
  </div>
 4. **Przeglądaj liste zakupów lub pobierz listę w formacie PDF** 📄
   <div align="center">  
-    <img src="images/listazakupowkomputer.png" alt="Lista zakupów komputer" width="400">
+    <img src="images/listazakupowkomputer.png" alt="Lista zakupów komputer" width="500">
   </div>
 5. **Ciesz się lepszą organizacją posiłków!** 🎉
 
