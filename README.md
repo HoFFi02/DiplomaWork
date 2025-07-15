@@ -9,10 +9,11 @@ Aplikacja internetowa umożliwiająca użytkownikom planowanie posiłków oraz a
 ✅ Rejestracja i logowanie użytkowników 🔐  
 ✅ Przeglądanie przepisów 🍲  
 ✅ Dodawanie przepisów do planu posiłków 📅  
-✅ Generowanie listy zakupów 🛒  
+✅ Automatyczne generowanie listy zakupów 🛒  
 ✅ Eksport listy zakupów do pliku PDF 📄  
 ✅ Intuicyjna obsługa metodą „przeciągnij i upuść” 🎯  
 ✅ Responsywny interfejs dostosowany do urządzeń mobilnych 📱  
+✅ Obsługa wielojęzyczności  
 
 ## 🛠️ Wykorzystane technologie
 
@@ -32,17 +33,39 @@ Aplikacja internetowa umożliwiająca użytkownikom planowanie posiłków oraz a
 ## 📖 Jak korzystać?
 
 1. **Zarejestruj się lub zaloguj** 📝
-2. **Dodaj przepisy do swojego planu posiłków** 📅
-3. **Generuj listę zakupów** 🛍️
-4. **Pobierz listę zakupów w formacie PDF** 📄
+ <div align="center">  
+    <img src="images/rejestracjakomputer.png" alt="Rejestracja komputer" width="500">
+    <img src="images/logowaniekomputer.png" alt="Logowanie komputer" width="500">
+ </div>
+2. **Dodaj przepisy do swojego planu posiłków poprzez funkcjonalność przeciągnij i upuść lub stwórz nowy przepis** 📅
+  <div align="center">  
+    <img src="images/stronaglowna.png" alt="Strona główna komputer" width="500">
+    <img src="images/dodawanieprzepisukomputer.png" alt="Dodawanie przepisu komputer" width="500">
+  </div>
+3. **Przeglądaj plan i szczegóły przepisu** 🛍️
+<div align="center">    
+    <img src="images/planpage.png" alt="Podstrona plan komputer" width="500">
+    <img src="images/planmodal.png" alt="Szczegóły przepisu komputer" width="500">
+ </div>
+4. **Przeglądaj liste zakupów lub pobierz listę w formacie PDF** 📄
+  <div align="center">  
+    <img src="images/listazakupowkomputer.png" alt="Lista zakupów komputer" width="500">
+  </div>
 5. **Ciesz się lepszą organizacją posiłków!** 🎉
 
-## 📸 Zrzuty ekranu
+## UI na urządzeniach mobilnych
 
-![Logowanie i rejestracja](images/logowanie.png)
-![Strona główna - dodawanie przepisu](images/dodawanie_przepisu.png)
-![Plan posiłków](images/plan_posilkow.png)
-![Lista zakupów](images/lista_zakupow.png)
+<div align="center">
+    <img src="images/rejestracjatelefon.jpg" alt="Rejestracja telefon" width="250">
+    <img src="images/logowanietelefon.jpg" alt="Logowanie telefon" width="250">
+    <img src="images/stronaglownatelefon.jpg" alt="Strona główna telefon" width="250">
+    <img src="images/dodawanieprzepisutelefon.jpg" alt="Dodawanie przepisu telefon" width="250">
+    <img src="images/plantelefon.jpg" alt="Podstrona plan telefon" width="250">
+    <img src="images/planmodaltelefon.jpg" alt="Szczegóły przepisu telefon" width="250">
+    <img src="images/listazakupowtelefon.jpg" alt="Lista zakupów telefon" width="250">
+</div>
 
 🛠 Stworzone przez Michała Hoffmana w ramach pracy dyplomowej na Uniwersytecie Zielonogórskim.
+
+
 
