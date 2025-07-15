@@ -13,10 +13,11 @@ function useUser() {
         const response = await axios.get(`${API_URL}/auth/session`, {
           withCredentials: true 
         });
-        console.log('Response status:', response.status); 
-        console.log('Dane użytkownika z sesji:', response.data.user); 
-       
-        setUser(response.data.user || null);
+        if (response.status === 200) {
+          setUser(response.data.user || null);
+        } else {
+          setUser(null);
+        }
       } catch (error) {
         console.error('Błąd podczas pobierania użytkownika:', error);
       }

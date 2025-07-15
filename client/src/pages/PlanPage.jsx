@@ -6,7 +6,9 @@ import LanguageSwitcher from '../hooks/LanguageSwitcher.jsx';
 
 function PlanPage() {
   const { user } = useUser();
-  
+  if (user === null) {
+    return <div>Loading...</div>;
+  }
   return (
     <div>
       <Nav />

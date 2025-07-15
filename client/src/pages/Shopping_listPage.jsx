@@ -7,7 +7,9 @@ import LanguageSwitcher from '../hooks/LanguageSwitcher.jsx';
 
 function ShoppingListPage () {
   const { user } = useUser();
-
+  if (user === null) {
+    return <div>Loading...</div>;
+  }
   return (
     <div className="shopping-list-page">
       <Nav />

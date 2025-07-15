@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 function PlanForm({ user }) {
   const [days, setDays] = useState([]);
   const { t } = useTranslation();
- 
+
   return (
       <div className="plan-table">
         <h2>{t('daysPlan')}</h2>

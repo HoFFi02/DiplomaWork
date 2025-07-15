@@ -17,8 +17,7 @@ const registerUser = async (req, res) => {
       { username, password: hashedPassword, email },
       { transaction }
     );
-console.log(user);
-   
+ 
     await assignDaysToUser(user.id_user, transaction);
 
     
